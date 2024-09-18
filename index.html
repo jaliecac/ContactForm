@@ -14,35 +14,38 @@
   <form>
     <main><h1>Contact Us</h1>
 
-    <h2>First Name</h2>
-    <input type="text" id="firstName">
+    <h2>First Name <span>*</span></h2>
+    <h2>Last Name <span>*</span></h2>
+    <input type="text" id="firstName" class="fifty-fifty">
+    <h3 class="hide">This field is required</h3>
+    <input type="text" id="lastName" class="fifty-fifty">
     <h3 class="hide">This field is required</h3>
 
-    <h2>Last Name</h2>
-    <input type="text" id="lastName">
-    <h3 class="hide">This field is required</h3>
-
-    <h2>Email Address</h2>
-    <input type="text" id="email">
+    <h2>Email Address <span>*</span></h2>
+    <input type="text" id="email" class="full">
     <h3 class="hide">Please enter a valid email address</h3>
     <h3 class="hide">This field is required</h3>
 
-    <h2>Query Type</h2>
-    <input type="radio" id="general" name="queryType">
-    <label for="general">General Enquiry</label>
-    <input type="radio" id="support" name="queryType">
-    <label for="support">Support Request</label>
+    <h2>Query Type <span>*</span></h2>
+    <div class="radios">
+      <input type="radio" id="general" name="queryType">
+      <label for="general">General Enquiry</label>
+    </div>
+    <div class="radios">
+      <input type="radio" id="support" name="queryType">
+      <label for="support">Support Request</label>
+    </div>
     <h3 class="hide">Please select a query type</h3>
 
-    <h2>Message</h2>
-    <input type="text" id="message">
+    <h2>Message <span>*</span></h2>
+    <textarea id="message" rows="5" class="full"></textarea>
     <h3 class="hide">This field is required</h3>
 
     <br><br>
 
     <div>
       <input type="checkbox" id="consent">
-      <label for="consent">I consent to being contacted by the team</label>
+      <label for="consent">I consent to being contacted by the team <span class="aterix">*</span></label>
       <h3 class="hide">To submit this form, please consent to being contacted</h3>
     </div>
 
