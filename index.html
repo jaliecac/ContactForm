@@ -8,45 +8,41 @@
   
   <title>Frontend Mentor | Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+  <form>
+    <main><h1>Contact Us</h1>
 
-  Contact Us
+    <h2>First Name</h2>
+    <input type="text" id="firstName">
+    This field is required
 
-  First Name
-  This field is required
+    <h2>Last Name</h2>
+    <input type="text" id="lastName">
+    This field is required
 
-  Last Name
-  This field is required
+    <h2>Email Address</h2>
+    <input type="text" id="email">
+    Please enter a valid email address
+    This field is required
 
-  Email Address
-  Please enter a valid email address
-  This field is required
+    <h2>Query Type</h2>
+    <input type="radio" id="general" name="queryType">
+    <label for="general">General Enquiry</label>
+    <input type="radio" id="support" name="queryType">
+    <label for="support">Support Request</label>
+    Please select a query type
 
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+    <h2>Message</h2>
+    <input type="text" id="message">
+    This field is required
 
-  Message
-  This field is required
+    <br><input type="checkbox">I consent to being contacted by the team
+    To submit this form, please consent to being contacted
 
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
+    <br><input type="submit"></main>
+  </form>
 
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
