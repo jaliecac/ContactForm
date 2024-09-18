@@ -16,30 +16,35 @@
 
     <h2>First Name</h2>
     <input type="text" id="firstName">
-    This field is required
+    <h3 class="hide">This field is required</h3>
 
     <h2>Last Name</h2>
     <input type="text" id="lastName">
-    This field is required
+    <h3 class="hide">This field is required</h3>
 
     <h2>Email Address</h2>
     <input type="text" id="email">
-    Please enter a valid email address
-    This field is required
+    <h3 class="hide">Please enter a valid email address</h3>
+    <h3 class="hide">This field is required</h3>
 
     <h2>Query Type</h2>
     <input type="radio" id="general" name="queryType">
     <label for="general">General Enquiry</label>
     <input type="radio" id="support" name="queryType">
     <label for="support">Support Request</label>
-    Please select a query type
+    <h3 class="hide">Please select a query type</h3>
 
     <h2>Message</h2>
     <input type="text" id="message">
-    This field is required
+    <h3 class="hide">This field is required</h3>
 
-    <br><input type="checkbox">I consent to being contacted by the team
-    To submit this form, please consent to being contacted
+    <br><br>
+
+    <div>
+      <input type="checkbox" id="consent">
+      <label for="consent">I consent to being contacted by the team</label>
+      <h3 class="hide">To submit this form, please consent to being contacted</h3>
+    </div>
 
     <br><input type="submit"></main>
   </form>

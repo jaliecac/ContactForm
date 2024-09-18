@@ -3,7 +3,7 @@
 @media (min-width: 40rem) {
     body {
         background-color: hsl(148, 38%, 91%);
-        padding: 100px;
+        padding: 80px;
     }
     
     main {
@@ -12,19 +12,31 @@
         padding:1px 20px 20px 20px;
         width: 60%;
         margin: auto;
-
+        border-radius: 10px;
     }
 
     h1 {
         color:hsl(187, 24%, 22%);
         font-weight: 600;
-        font-size: 22pt;
+        font-size: 20pt;
     }
 
     h2 {
         color:hsl(186, 15%, 59%);
         font-weight: 500;
-        font-size: 14pt;
+        font-size: 10pt;
+    }
+
+    input[type="text"] {
+        font-size: 12pt;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid hsl(186, 15%, 59%);
+        color: hsl(186, 15%, 59%);
+    }
+
+    .hide {
+        display: none;
     }
 }
 
