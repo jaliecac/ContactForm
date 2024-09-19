@@ -9,6 +9,8 @@
   <title>Frontend Mentor | Contact form</title>
 
   <link rel="stylesheet" href="Style.css">
+  <style src="Scripts.js"></style>
+
 </head>
 <body>
   <form name="contactForm" onsubmit="return validateForm()" method="post">
@@ -19,9 +21,11 @@
     <h2 class="fifty-fifty right">Last Name <span>*</span></h2>
     <input type="text" id="firstName" class="fifty-fifty left">
     <input type="text" id="firstName" class="hide full">
+    <h3 class="error" id=""></h3>
     <h2 class="full hide">Last Name <span>*</span></h2>
     <input type="text" id="lastName" class="fifty-fifty right">
     <input type="text" id="lastName" class="full hide">
+    <h3 class="error" id=""></h3>
 
     <h2 class="paddingEmail">Email Address <span>*</span></h2>
     <input type="text" id="email" class="full">

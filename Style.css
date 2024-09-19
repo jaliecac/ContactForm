@@ -95,6 +95,10 @@
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+    .error {
+        display:none;
+    }
 }
 
 /* Design for any screen below 40rem */
@@ -192,5 +196,9 @@
 
     .marginBetween {
         margin-top: 10px;
+    }
+
+    .error {
+        display:none;
     }
 }
