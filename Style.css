@@ -97,7 +97,8 @@
     }
 
     .error {
-        display:none;
+        color: red;
+        font-size: 10pt;
     }
 }
 
@@ -194,11 +195,8 @@
         padding-bottom: 15px;
     }
 
-    .marginBetween {
-        margin-top: 10px;
-    }
-
     .error {
-        display:none;
+        color: red;
+        font-size: 10pt;
     }
 }

@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Contact form</title>
 
   <link rel="stylesheet" href="Style.css">
-  <style src="Scripts.js"></style>
+  <script src="Scripts.js"></script>
 
 </head>
 <body>
@@ -21,14 +21,15 @@
     <h2 class="fifty-fifty right">Last Name <span>*</span></h2>
     <input type="text" id="firstName" class="fifty-fifty left">
     <input type="text" id="firstName" class="hide full">
-    <h3 class="error" id=""></h3>
+    <span class="error" id="firstError"></span>
     <h2 class="full hide">Last Name <span>*</span></h2>
     <input type="text" id="lastName" class="fifty-fifty right">
     <input type="text" id="lastName" class="full hide">
-    <h3 class="error" id=""></h3>
+    <span  class="error" id="lastError"></span>
 
     <h2 class="paddingEmail">Email Address <span>*</span></h2>
     <input type="text" id="email" class="full">
+    <span  class="error" id="emailError"></span>
 
     <h2>Query Type <span>*</span></h2>
     <div class="radios left">
@@ -39,19 +40,23 @@
       <input type="radio" id="support" name="queryType" class="middle">
       <label for="support" class="middle">Support Request</label>
     </div>
+    <span class="error" id="radioError"></span>
     
     <!-- Hidden unless on a small screen -->
     <div class="hide radioButtons">
       <input type="radio" id="general" name="queryType" class="middle">
       <label for="general" class="middle">General Enquiry</label>
     </div>
-    <div class="hide radioButtons marginBetween">
+    <h3 class="error" id=""></h3>
+    <div class="hide radioButtons">
       <input type="radio" id="support" name="queryType" class="middle">
       <label for="support" class="middle">Support Request</label>
     </div>
+    <span class="error" id=""></span>
 
     <h2 class="paddingMessage">Message <span>*</span></h2>
     <textarea id="message" rows="5" class="full"></textarea>
+    <span class="error" id="messageError"></span>
 
     <br><br>
 
@@ -59,6 +64,7 @@
       <input type="checkbox" id="consent" class="middle">
       <label for="consent" class="middle">I consent to being contacted by the team <span>*</span></label>
     </div>
+    <span class="error" id="consentError"></span>
 
     <br><input type="submit"></main>
   </form>
