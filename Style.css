@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
+/* Design for any screen above 40rem */
 @media (min-width: 40rem) {
     body {
         background-color: hsl(148, 38%, 91%);
@@ -21,7 +22,7 @@
         font-size: 20pt;
     }
 
-    h2 {
+    h2, label{
         color:hsl(186, 15%, 59%);
         font-weight: 500;
         font-size: 10pt;
@@ -64,7 +65,7 @@
 
     .radios {
         border: 1px solid hsl(186, 15%, 59%);
-        padding: 5px;
+        padding: 5px 5px 10px 5px;
         border-radius: 5px;
         width: 47.5%;
         display: inline-block;
@@ -77,5 +78,119 @@
     .right {
         float: right;
     }
+
+    .paddingMessage {
+        padding-top: 50px;
+    }
+
+    .paddingEmail {
+        padding-top: 30px;
+    }
+
+    .middle {
+        vertical-align: middle;
+    }
+
+    .consentCheck {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
 
+/* Design for any screen below 40rem */
+
+@media (max-width: 39rem) {
+
+    body {
+        background-color: hsl(148, 38%, 91%);
+        padding: 80px;
+    }
+
+    main {
+        font-family: "Karla", sans-serif;
+        background-color: white;
+        padding:1px 25px 25px 25px;
+        width: 55%;
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    h1 {
+        color:hsl(187, 24%, 22%);
+        font-weight: 600;
+        font-size: 20pt;
+    }
+
+    h2, label{
+        color:hsl(186, 15%, 59%);
+        font-weight: 500;
+        font-size: 10pt;
+    }
+
+    input[type="text"], textarea {
+        font-size: 12pt;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid hsl(186, 15%, 59%);
+        color: hsl(186, 15%, 59%);
+        resize: none;
+    }
+
+    .fifty-fifty {
+        display: none;
+    }
+
+    span {
+        color:hsl(169, 82%, 27%);
+    }
+
+    input[type="submit"] {
+        color: white;
+        background-color: hsl(169, 82%, 27%);
+        border: none;
+        border-radius: 5px;
+        padding:15px;
+        width:100%;
+    }
+
+    .full {
+        width: 98%;
+    }
+
+    .radioButtons {
+        border: 1px solid hsl(186, 15%, 59%);
+        padding: 5px 5px 10px 5px;
+        border-radius: 5px;
+        width: 98%;
+        display: inline-block;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .paddingMessage {
+        padding-top: 15px;
+    }
+
+    .paddingEmail {
+        padding-top: 10px;
+    }
+
+    .middle {
+        vertical-align: middle;
+    }
+
+    .consentCheck {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .marginBetween {
+        margin-top: 10px;
+    }
+}
