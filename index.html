@@ -16,57 +16,46 @@
   <form name="contactForm" onsubmit="return validateForm()" method="post">
     <main><h1>Contact Us</h1>
 
-    <h2 class="fifty-fifty">First Name <span>*</span></h2>
+    <h2 class="fifty-fifty hideNow">First Name <span>*</span></h2>
     <h2 class="full hide">First Name <span>*</span></h2>
-    <h2 class="fifty-fifty right">Last Name <span>*</span></h2>
-    <input type="text" id="firstName" class="fifty-fifty left">
-    <input type="text" id="firstName" class="hide full">
-    <span class="error" id="firstError"></span>
+    <h2 class="fifty-fifty right hideNow">Last Name <span>*</span></h2>
+    <input type="text" id="firstName" class="fifty-fifty left" onfocus="hideErrors()">
+    <span class="error hide" id="firstError"></span>
     <h2 class="full hide">Last Name <span>*</span></h2>
-    <input type="text" id="lastName" class="fifty-fifty right">
-    <input type="text" id="lastName" class="full hide">
-    <span  class="error" id="lastError"></span>
+    <input type="text" id="lastName" class="fifty-fifty right" onfocus="hideErrors()">
+    <br><span class="error hideNow fifty-fifty" id="first1Error"></span>
+    <span class="error fifty-fifty right" id="lastError"></span>
 
-    <h2 class="paddingEmail">Email Address <span>*</span></h2>
-    <input type="text" id="email" class="full">
+    <h2>Email Address <span>*</span></h2>
+    <input type="text" id="email" class="full" onfocus="hideErrors()">
     <span  class="error" id="emailError"></span>
 
     <h2>Query Type <span>*</span></h2>
     <div class="radios left">
-      <input type="radio" id="general" name="queryType" class="middle">
+      <input type="radio" id="general" name="queryType" class="middle" onfocus="hideErrors()">
       <label for="general" class="middle">General Enquiry</label>
     </div>
     <div class="radios right">
-      <input type="radio" id="support" name="queryType" class="middle">
+      <input type="radio" id="support" name="queryType" class="middle" onfocus="hideErrors()">
       <label for="support" class="middle">Support Request</label>
     </div>
     <span class="error" id="radioError"></span>
-    
-    <!-- Hidden unless on a small screen -->
-    <div class="hide radioButtons">
-      <input type="radio" id="general" name="queryType" class="middle">
-      <label for="general" class="middle">General Enquiry</label>
-    </div>
-    <h3 class="error" id=""></h3>
-    <div class="hide radioButtons">
-      <input type="radio" id="support" name="queryType" class="middle">
-      <label for="support" class="middle">Support Request</label>
-    </div>
-    <span class="error" id=""></span>
 
     <h2 class="paddingMessage">Message <span>*</span></h2>
-    <textarea id="message" rows="5" class="full"></textarea>
+    <textarea id="message" rows="5" class="full" onfocus="hideErrors()"></textarea>
     <span class="error" id="messageError"></span>
 
     <br><br>
 
     <div class="consentCheck">
-      <input type="checkbox" id="consent" class="middle">
+      <input type="checkbox" id="consent" class="middle" onfocus="hideErrors()">
       <label for="consent" class="middle">I consent to being contacted by the team <span>*</span></label>
     </div>
     <span class="error" id="consentError"></span>
 
-    <br><input type="submit"></main>
+    <div class="submitButton">
+      <input type="submit"></main>
+    </div>
   </form>
 
 </body>

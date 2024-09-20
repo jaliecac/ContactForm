@@ -52,6 +52,7 @@
         border-radius: 5px;
         padding:15px;
         width:100%;
+        margin-bottom: 20px;
     }
 
     .fifty-fifty {
@@ -83,10 +84,6 @@
         padding-top: 50px;
     }
 
-    .paddingEmail {
-        padding-top: 30px;
-    }
-
     .middle {
         vertical-align: middle;
     }
@@ -100,6 +97,19 @@
         color: red;
         font-size: 10pt;
     }
+
+    .submitButton {
+        padding-top: 30px;
+    }
+
+    input:hover, textarea:hover {
+        cursor: pointer;
+        border-color: hsl(169, 82%, 27%);
+    }
+
+    input[type="checkbox"]:checked {
+        accent-color: hsl(169, 82%, 27%);
+    }
 }
 
 /* Design for any screen below 40rem */
@@ -108,14 +118,14 @@
 
     body {
         background-color: hsl(148, 38%, 91%);
-        padding: 80px;
+        padding: 20px;
     }
 
     main {
         font-family: "Karla", sans-serif;
         background-color: white;
         padding:1px 25px 25px 25px;
-        width: 55%;
+        width: 80%;
         margin: auto;
         border-radius: 10px;
     }
@@ -142,7 +152,7 @@
     }
 
     .fifty-fifty {
-        display: none;
+        width: 98%;
     }
 
     span {
@@ -162,20 +172,13 @@
         width: 98%;
     }
 
-    .radioButtons {
+    .radios {
         border: 1px solid hsl(186, 15%, 59%);
         padding: 5px 5px 10px 5px;
         border-radius: 5px;
         width: 98%;
         display: inline-block;
-    }
-
-    .left {
-        display: none;
-    }
-
-    .right {
-        display: none;
+        margin-bottom: 5px;
     }
 
     .paddingMessage {
@@ -198,5 +201,13 @@
     .error {
         color: red;
         font-size: 10pt;
+    }
+
+    .hideNow {
+        display: none;
+    }
+
+    .submitButton {
+        padding-top: 20px;
     }
 }

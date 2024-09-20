@@ -8,6 +8,7 @@ function validateForm() {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
     const fError = document.getElementById("firstError");
+    const f1Error = document.getElementById("first1Error");
     const lError = document.getElementById("lastError");
     const eError = document.getElementById("emailError");
     const mError = document.getElementById("messageError");
@@ -16,9 +17,9 @@ function validateForm() {
     const checkBox = document.getElementById("consent");
     const cError = document.getElementById("consentError");
 
-
-    if (fName == "") {
+    if (fName == "" || f1Error == "") {
         fError.textContent = "This field is required";
+        f1Error.textContent = "This field is required";
         isValid = false;
     }
     if (lName == "") {
@@ -49,5 +50,27 @@ function validateForm() {
         isValid = false;
     }
 
+    if (isValid == true) {
+        alert("Form Submitted!");
+    }
+
     return isValid;
+}
+
+function hideErrors() {
+    const fError = document.getElementById("firstError");
+    const f1Error = document.getElementById("first1Error");
+    const lError = document.getElementById("lastError");
+    const eError = document.getElementById("emailError");
+    const mError = document.getElementById("messageError");
+    const radioError = document.getElementById("radioError");
+    const cError = document.getElementById("consentError");
+    
+    f1Error.textContent = "";
+    fError.textContent = "";
+    lError.textContent = "";
+    eError.textContent = "";
+    mError.textContent = "";
+    radioError.textContent = "";
+    cError.textContent = "";
 }
