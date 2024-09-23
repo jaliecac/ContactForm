@@ -102,12 +102,20 @@
         padding-top: 30px;
     }
 
-    input:hover, textarea:hover {
+    input:hover, textarea:hover, .radios:hover {
         cursor: pointer;
         border-color: hsl(169, 82%, 27%);
     }
 
     input[type="checkbox"]:checked {
+        accent-color: hsl(169, 82%, 27%);
+    }
+
+    input[type="submit"]:hover {
+        background-color: hsl(187, 24%, 22%);
+    }
+
+    input[type='radio'] {
         accent-color: hsl(169, 82%, 27%);
     }
 }
@@ -209,5 +217,22 @@
 
     .submitButton {
         padding-top: 20px;
+    }
+
+    input:hover, textarea:hover, .radios:hover {
+        cursor: pointer;
+        border-color: hsl(169, 82%, 27%);
+    }
+
+    input[type="checkbox"]:checked {
+        accent-color: hsl(169, 82%, 27%);
+    }
+
+    input[type="submit"]:hover {
+        background-color: hsl(187, 24%, 22%);
+    }
+
+    input[type='radio'] {
+        accent-color: hsl(169, 82%, 27%);
     }
 }
